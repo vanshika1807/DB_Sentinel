@@ -1,4 +1,4 @@
-package com.dbsentinel.config;
+package com.dbSentinel.DB_Sentinel.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.*;

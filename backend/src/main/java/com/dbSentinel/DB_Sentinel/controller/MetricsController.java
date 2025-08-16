@@ -1,7 +1,7 @@
-package com.dbsentinel.controller;
+package com.dbSentinel.DB_Sentinel.controller;
 
-import com.dbsentinel.model.MetricRecord;
-import com.dbsentinel.repo.MetricRecordRepository;
+import com.dbSentinel.DB_Sentinel.model.MetricRecord;
+import com.dbSentinel.DB_Sentinel.repo.MetricRecordRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

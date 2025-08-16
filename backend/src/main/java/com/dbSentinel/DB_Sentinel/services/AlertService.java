@@ -1,4 +1,4 @@
-package com.dbsentinel.service;
+package com.dbSentinel.DB_Sentinel.services;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;

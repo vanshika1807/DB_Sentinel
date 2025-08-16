@@ -1,8 +1,8 @@
-package com.dbsentinel.service;
+package com.dbSentinel.DB_Sentinel.services;
 
-import com.dbsentinel.model.MetricRecord;
-import com.dbsentinel.model.MetricsSnapshot;
-import com.dbsentinel.repo.MetricRecordRepository;
+import com.dbSentinel.DB_Sentinel.model.MetricRecord;
+import com.dbSentinel.DB_Sentinel.model.MetricsSnapshot;
+import com.dbSentinel.DB_Sentinel.repo.MetricRecordRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package com.dbsentinel.service;
+package com.dbSentinel.DB_Sentinel.services;
 
-import com.dbsentinel.model.MetricsSnapshot;
+import com.dbSentinel.DB_Sentinel.model.MetricsSnapshot;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

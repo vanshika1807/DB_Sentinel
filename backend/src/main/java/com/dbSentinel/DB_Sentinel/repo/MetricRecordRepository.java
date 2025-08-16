@@ -1,6 +1,6 @@
-package com.dbsentinel.repo;
+package com.dbSentinel.DB_Sentinel.repo;
 
-import com.dbsentinel.model.MetricRecord;
+import com.dbSentinel.DB_Sentinel.model.MetricRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.dbsentinel.model;
+package com.dbSentinel.DB_Sentinel.model;
 
 import jakarta.persistence.*;
 import lombok.*;
