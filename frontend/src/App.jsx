@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
-import StatCard from './Components/StatCard.jsx'
+import StatCard from './Components/StatChart.jsx'
 import LineChart from './Components/LineChart.jsx'
 
 export default function App() {
