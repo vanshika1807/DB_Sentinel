@@ -4,11 +4,16 @@ Chart.register(LineElement, PointElement, LinearScale, CategoryScale, Legend, To
 
 export default function LineChart({ labels, data, title }) {
   return (
-    <div style={{border:'1px solid #ddd', borderRadius:8, padding:16}}>
-      <div style={{marginBottom:8, opacity:.8}}>{title}</div>
+    <div className="rounded-2xl shadow-md bg-white p-4">
+      <div className="mb-2 text-gray-600">{title}</div>
       <Line data={{
         labels,
-        datasets: [{ label: title, data }]
+        datasets: [{ label: title, data,
+          borderColor: "#3b82f6", // Tailwind blue-500
+          backgroundColor: "rgba(59,130,246,0.2)",
+          fill: true,
+          tension: 0.3
+        }]
       }} options={{ responsive:true, maintainAspectRatio:false }} height={220}/>
     </div>
   )

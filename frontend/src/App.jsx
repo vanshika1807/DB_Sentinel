@@ -23,12 +23,12 @@ export default function App() {
   const avgData = useMemo(()=>history.map(x=>x.avgQueryTimeMs), [history])
 
   return (
-    <div style={{padding:24, fontFamily:'system-ui, sans-serif'}}>
-      <div style={{display:'flex', alignItems:'center', gap:12}}>
-      <img src="/assets/logo.png" alt="DB Sentinel Logo" style={{width:40, height:40}} />
+    <div className="p-6 font-sans min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="flex items-center gap-3 mb-6">
+      <img src="/assets/favicon.png" alt="DB Sentinel Logo" className="w-10 h-10" />
       <div>
-        <h2 style={{margin:0}}>DB Sentinel</h2>
-        <p style={{margin:0, opacity:.7}}>Real-time MySQL monitoring • Gmail alerts</p>
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">DB Sentinel</h2>
+        <p className="text-sm text-gray-600">Real-time MySQL monitoring • Gmail alerts</p>
       </div>
       </div>
 
