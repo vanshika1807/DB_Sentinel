@@ -24,12 +24,17 @@ export default function App() {
 
   return (
     <div style={{padding:24, fontFamily:'system-ui, sans-serif'}}>
-      <h2>DB Sentinel</h2>
-      <p style={{marginTop:-8, opacity:.7}}>Real-time MySQL monitoring • Gmail alerts</p>
+      <div style={{display:'flex', alignItems:'center', gap:12}}>
+      <img src="/assets/logo.png" alt="DB Sentinel Logo" style={{width:40, height:40}} />
+      <div>
+        <h2 style={{margin:0}}>DB Sentinel</h2>
+        <p style={{margin:0, opacity:.7}}>Real-time MySQL monitoring • Gmail alerts</p>
+      </div>
+      </div>
 
       <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(220px,1fr))', gap:12, marginTop:16}}>
-        <StatCard label="QPS" value={fmt(latest?.qps,2)} />
-        <StatCard label="Active Connections" value={latest?.threadsConnected} />
+        <StatCard label="QPS" value={fmt(latest?.qps,2)} icon="/assets/database-storage.png"/>
+        <StatCard label="Active Connections" value={latest?.threadsConnected} icon="/assets/alert.png"/>
         <StatCard label="Slow Queries (total)" value={latest?.slowQueriesTotal} />
         <StatCard label="Avg Query Time (ms)" value={fmt(latest?.avgQueryTimeMs,0)} />
         <StatCard label="CPU (%)" value={fmt(latest?.systemCpuLoadPct,1)} />
